@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/jquery-ui.css" rel="stylesheet">
+    <!-- Bootstrap Icon CSS -->
+    <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
+    <!-- CSS -->
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <!-- FancyBox CSS -->
+    <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
+    <!-- Swiper slider CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- Slick slider CSS -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/daterangepicker.css">
+    <!-- BoxIcon  CSS -->
+    <link href="assets/css/boxicons.min.css" rel="stylesheet">
+    <!--  Style CSS  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Title -->
+    <title>OneTrack - Logistics & Transportation</title>
+    <link rel="icon" href="assets/fav-icon.svg" type="image/gif" sizes="20x20">
+</head>
+
+<body class="tt-magic-cursor">
+
+    <div id="magic-cursor">
+        <div id="ball"></div>
+    </div>
+
+    <!-- Back To Top -->
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+        <svg class="arrow" width="22" height="25" viewBox="0 0 24 23" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M0.556131 11.4439L11.8139 0.186067L13.9214 2.29352L13.9422 20.6852L9.70638 20.7061L9.76793 8.22168L3.6064 14.4941L0.556131 11.4439Z" />
+            <path d="M23.1276 11.4999L16.0288 4.40105L15.9991 10.4203L20.1031 14.5243L23.1276 11.4999Z" />
+        </svg>
+    </div>
+
+    <!-- header Section Start-->
+     <header class="header-area style-1 two">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+            <div class="logo-area">
+                <a href="index.html" class="header-logo">
+                    <img src="assets/img/header-logo.svg" alt="">
+                </a>
+            </div>
+            <div class="menu-area">
+                <div class="main-menu ">
+                    <div class="mobile-logo-area d-xl-none d-flex align-items-center">
+                        <a href="index.html" class="mobile-logo-wrap">
+                            <img src="assets/img/home1/header-logo.svg" alt="">
+                        </a>
+                        <div class="menu-close-btn">
+                            <i class="bi bi-x"></i>
+                        </div>
+                    </div>
+                    <ul class="menu-list justify-content-center">
+                        <li class="menu-item-has-children">
+                            <a href="index.html" class="drop-down"> HOME</a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="about-konndor-line.html" class="drop-down"> ABOUT US</a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="services.html" class="drop-down">SERVICES
+                                <i class="bi bi-caret-down-fill"></i>
+                            </a>
+                            <i class="bi bi-plus dropdown-icon"></i>
+                            <ul class="sub-menu">
+                                <li><a href="services.html#shipping-agent">SHIPPING AGENT</a></li>
+                                <li><a href="services.html#nvocc">NVOCC</a></li>
+                                <li class="menu-item-has-children">
+                                    <a href="#freight-forwarding" class="drop-down">FREIGHT FORWARDING
+                                        <i class="bi bi-caret-right-fill"></i>
+                                    </a>
+                                    <i class="bi bi-plus dropdown-icon"></i>
+                                    <ul class="sub-menu">
+                                        <li><a href="services.html#air-fright">AIR FRIGHT</a></li>
+                                        <li><a href="services.html#sea-fright">SEA FRIGHT</a></li>
+                                        <li><a href="services.html#rail-fright">RAIL FRIGHT</a></li>
+                                        <li><a href="services.html#inland-fright">INLAND FRIGHT</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="services.html#logistics-activites">LOGISTICS ACTIVITES</a></li>
+                                <li><a href="services.html#project-cargo">PROJECT CARGO</a></li>
+                                <li><a href="services.html#perisable-goods">PERISABLE GOODS</a></li>
+                                <li><a href="services.html#specialization">SPECIALIZATION 40"REFEER</a></li>
+                                <li><a href="services.html#warhousing">WAREHOUSING</a></li>
+                                <li><a href="services.html#custom-clearance">CUSTOM CLEARANCE</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="contact-konndor-line.html" class="drop-down"> CONTACT US</a>
+                        </li>
+                    </ul>
+                    <a class="primary-btn2 btn-hover d-xl-none" href="#">
+                        Track &amp; Trace
+                        <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path
+                                    d="M5.83333 4.16667V0H4.16667V4.16667H0V5.83333H4.16667V10H5.83333V5.83333H10V4.16667H5.83333Z">
+                                </path>
+                            </g>
+                        </svg>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="contact-area">
+                    <div class="search-and-login">
+                        <div class="search-bar">
+                            <div class="search-btn">
+                                <a href="https://www.facebook.com/"><i class="bx bxl-facebook"></i></a>
+                            </div>
+                        </div>
+                        <div class="search-bar">
+                            <div class="search-btn">
+                                <a href="https://www.linkedin.com/"><i class="bx bxl-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="primary-btn2 white-bg btn-hover d-xl-flex d-none" href="#">
+                        Track & Trace
+                        <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path
+                                    d="M5.83333 4.16667V0H4.16667V4.16667H0V5.83333H4.16667V10H5.83333V5.83333H10V4.16667H5.83333Z" />
+                            </g>
+                        </svg>
+                        <span></span>
+                    </a>
+                </div>
+                <div class="sidebar-button mobile-menu-btn">
+                    <svg width="20" height="18" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1.29445 2.8421H10.5237C11.2389 2.8421 11.8182 2.2062 11.8182 1.42105C11.8182 0.635903 11.2389 0 10.5237 0H1.29445C0.579249 0 0 0.635903 0 1.42105C0 2.2062 0.579249 2.8421 1.29445 2.8421Z">
+                        </path>
+                        <path
+                            d="M1.23002 10.421H18.77C19.4496 10.421 20 9.78506 20 8.99991C20 8.21476 19.4496 7.57886 18.77 7.57886H1.23002C0.550421 7.57886 0 8.21476 0 8.99991C0 9.78506 0.550421 10.421 1.23002 10.421Z">
+                        </path>
+                        <path
+                            d="M18.8052 15.1579H10.2858C9.62563 15.1579 9.09094 15.7938 9.09094 16.5789C9.09094 17.3641 9.62563 18 10.2858 18H18.8052C19.4653 18 20 17.3641 20 16.5789C20 15.7938 19.4653 15.1579 18.8052 15.1579Z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header Section End-->
+
+    <!-- Breadcrumb Section Start -->
+    <div class="breadcrumb-section">
+        <div class="container">
+            <div class="breadcrumb-content pb-60">
+                <h1>Get in Touch</h1>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb Section End -->
+
+<!-- -----------------------------------------------------section start--------------------------------------------------- -->
+
+    <!-- Contact Map Section Start -->
+    <div class="contact-map-section1 mb-120">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1121.4514218669244!2d73.03792848549921!3d19.01540625783355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3ac8d1c04a3%3A0x3a2e56582e9947f4!2sSky%20Lark!5e0!3m2!1sen!2sin!4v1768912611599!5m2!1sen!2sin"
+            width="100%" height="450" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!-- Contact Map Section End -->
+
+    <!-- Home2 Contact Section Start -->
+    <div class="home2-contact-section mb-120">
+        <div class="container">
+            <div class="home2-contact-section-wrap">
+                <div class="row gy-5 justify-content-between">
+                    <div class="col-xl-5 col-lg-12 wow animate fadeInLeft" data-wow-delay="200ms"
+                        data-wow-duration="1500ms">
+                        <div class="section-title mb-50">
+                            <h2>Get in Touch.</h2>
+                        </div>
+                        <ul class="contact-list">
+                            <li class="single-contact">
+                                <h3>Registered Office</h3>
+                                <a href="#">Office: 504, 5th Floor, Kukreja Centre, B-Wing, Plot No. 13, Sector-11, CBD Belapur,
+                                    Navi Mumbai 400614</a>
+                            </li>
+                        </ul>
+                        <div class="contact-support" style="margin-bottom: 10px;">
+                            <h6>Email</h6>
+                            <svg class="line" height="6" viewBox="0 0 84 6" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5 2.5L0 0.113249V5.88675L5 3.5V2.5ZM79 3.5L84 5.88675V0.113249L79 2.5V3.5ZM4.5 3V3.5H79.5V3V2.5H4.5V3Z" />
+                            </svg>
+
+                            <a class="call" href="mailto:info@boxeraglobal.com">
+                                <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path
+                                            d="M14.7161 10.5021C13.7365 10.5021 12.7747 10.3489 11.8633 10.0477C11.4166 9.89539 10.8676 10.0351 10.595 10.3151L8.79598 11.6732C6.70961 10.5595 5.42444 9.27472 4.32595 7.20402L5.64407 5.45186C5.98653 5.10986 6.10936 4.61028 5.96219 4.14153C5.65969 3.22528 5.50603 2.26391 5.50603 1.28391C5.50607 0.575957 4.93011 0 4.2222 0H1.28387C0.575957 0 0 0.575957 0 1.28387C0 9.39843 6.60157 16 14.7161 16C15.424 16 16 15.424 16 14.7161V11.786C16 11.0781 15.424 10.5021 14.7161 10.5021Z" />
+                                    </g>
+                                </svg>
+                                <span>info@boxeraglobal.com </span>
+                            </a>
+                        </div>
+                        <div class="contact-support" style="margin-bottom: 10px;">
+                            <h6>Phone</h6>
+                            <svg class="line" height="6" viewBox="0 0 84 6" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5 2.5L0 0.113249V5.88675L5 3.5V2.5ZM79 3.5L84 5.88675V0.113249L79 2.5V3.5ZM4.5 3V3.5H79.5V3V2.5H4.5V3Z" />
+                            </svg>
+
+                            <a class="call" href="tel:+912246165950">
+                                <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path
+                                            d="M14.7161 10.5021C13.7365 10.5021 12.7747 10.3489 11.8633 10.0477C11.4166 9.89539 10.8676 10.0351 10.595 10.3151L8.79598 11.6732C6.70961 10.5595 5.42444 9.27472 4.32595 7.20402L5.64407 5.45186C5.98653 5.10986 6.10936 4.61028 5.96219 4.14153C5.65969 3.22528 5.50603 2.26391 5.50603 1.28391C5.50607 0.575957 4.93011 0 4.2222 0H1.28387C0.575957 0 0 0.575957 0 1.28387C0 9.39843 6.60157 16 14.7161 16C15.424 16 16 15.424 16 14.7161V11.786C16 11.0781 15.424 10.5021 14.7161 10.5021Z" />
+                                    </g>
+                                </svg>
+                                <span>+91 22 4616 5950</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow animate fadeInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
+                        <div class="contact-form-wrapper">
+                            <form action="contact-form.php" method="POST">
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <div class="form-inner">
+                                            <label>Full Name</label>
+                                            <input type="text" placeholder="Full Name" name="name" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-inner">
+                                            <label>Company Name</label>
+                                            <input type="text" placeholder="Company Name" name="company">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-inner">
+                                            <label>Your Email *</label>
+                                            <input type="email" placeholder="Your Email Id" name="email" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-inner">
+                                            <label>Phone Number</label>
+                                            <input type="text" placeholder="Your Contact Number" name="phone" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-inner">
+                                            <label>Message</label>
+                                            <textarea placeholder="Write your message" name="comment"
+                                                required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-inner2">
+                                            <label> How many words "koondor-line" have?</label>
+                                            <select class="form-select" id="contactSelect22" name="verify" required>
+                                                <option value="" selected disabled>Select an option</option>
+                                                <option value="12">12</option>
+                                                <option value="09">09</option>
+                                                <option value="11">11</option>
+                                                <option value="10">10</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <button class="primary-btn2 btn-hover" type="submit">
+                                Request Callback
+                                <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path
+                                            d="M5.83333 4.16667V0H4.16667V4.16667H0V5.83333H4.16667V10H5.83333V5.83333H10V4.16667H5.83333Z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                    <img src="assets/img/home2/home2-contact-bg.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Home2 Contact Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="footer-section style-2">
+        <div class="footer-menu">
+            <div class="container">
+                <div class="row gy-5 justify-content-between">
+                    <div class="col-xl-4 col-lg-3 col-md-4 col-sm-6">
+                        <div class="footer-widget">
+                            
+                            <div class="footer-logo-and-social">
+                                <div class="logo-area">
+                                    <a href="#"><img src="assets/img/home2/Footer-logo-h2.html" alt=""></a>
+                                </div>
+                                <p>Office: 504, 5th Floor, Kukreja Centre, B-Wing, Plot No. 13, Sector-11, CBD Belapur,
+                                    Navi Mumbai 400614</p>
+                                <ul class="social-list">
+                                    <li><a href="https://www.facebook.com/"><i class="bx bxl-facebook"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/"><i class="bx bxl-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex justify-content-lg-start justify-content-md-center justify-content-sm-center">
+                        <div class="footer-widget">
+                            <div class="widget-title">
+                                <h3>Quick Links</h3>
+                            </div>
+                            <ul class="widget-list">
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="about-konndor-line.html">ABOUT US</a></li>
+                                <li><a href="services.html">SERVICS</a></li>
+                                <li><a href="contact-konndor-line.html">CONTACT US</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-lg-center justify-content-md-end">
+                        <div class="footer-widget">
+                            <div class="widget-title">
+                                <h3>Our Services</h3>
+                            </div>
+                            <ul class="widget-list">
+                                <li><a href="#shipping-agent">SHIPPING AGENT</a></li>
+                                <li><a href="#project-cargo">PROJRCT CARGO</a></li>
+                                <li><a href="#perisable-goods"> PERISABLE GOODS</a></li>
+                                <li><a href="#specialization">SPECIALIZATION</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div
+                        class="col-xl-3 col-lg-3 col-md-4 col-sm-6 d-flex justify-content-lg-end justify-content-md-start justify-content-sm-center">
+                        <div class="footer-widget">
+                            <div class="widget-title">
+                                <h3>Support</h3>
+                            </div>
+                            <ul class="widget-list">
+
+                                <li><a href="#warehousing">WAREHOUSING</a></li>
+                                <li><a href="#custom-clearence">CUSTOM CLEARENCE</a></li>
+                                <li><a href="#freight-forwarding">FREIGHT FORWARDING</a></li>
+                                <li><a href="#logistics-activites">LOGISTICS ACTIVITES</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Copyright <span id="year"></span> <a href="#">konndor-line</a> | All Right Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!--  Main jQuery  -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/daterangepicker.min.js"></script>
+
+    <!-- Popper and Bootstrap JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <!-- Swiper slider JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <!-- Waypoints JS -->
+    <script src="assets/js/waypoints.min.js"></script>
+    <!-- Counterup JS -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- Wow JS -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Gsap  JS -->
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/select-dropdown.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

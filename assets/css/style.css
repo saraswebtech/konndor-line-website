@@ -7680,7 +7680,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   font-size: 14px;
 }
 .company-highlights-section .company-highlights-info {
-  background-image: url(../img/home1/company-highlights-info-img.png), linear-gradient(180deg, #FAC12E 0%, #FAC12E 100%);
+  background-image: url(../img/home1/company-highlights-info-img.png), linear-gradient(180deg, );
   padding: 202px 70px;
   position: relative;
   background-size: cover;
@@ -23969,4 +23969,9 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   .industries-contact-section .industries-contact-area .industries-img-area-wrapper .industries-img-bg {
     display: none;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+.custom-right-radius {
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
