@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/jquery-ui.css" rel="stylesheet">
+    <!-- Bootstrap Icon CSS -->
+    <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
+    <!-- CSS -->
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <!-- FancyBox CSS -->
+    <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
+    <!-- Swiper slider CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- Slick slider CSS -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/daterangepicker.css">
+    <!-- BoxIcon  CSS -->
+    <link href="assets/css/boxicons.min.css" rel="stylesheet">
+    <!--  Style CSS  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Title -->
+    <title>OneTrack - Logistics & Transportation</title>
+    <link rel="icon" href="assets/fav-icon.svg" type="image/gif" sizes="20x20">
+</head>
+
+<body class="tt-magic-cursor">
+
+    <div id="magic-cursor">
+        <div id="ball"></div>
+    </div>
+
+    <!-- Back To Top -->
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+        <svg class="arrow" width="22" height="25" viewBox="0 0 24 23" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M0.556131 11.4439L11.8139 0.186067L13.9214 2.29352L13.9422 20.6852L9.70638 20.7061L9.76793 8.22168L3.6064 14.4941L0.556131 11.4439Z" />
+            <path d="M23.1276 11.4999L16.0288 4.40105L15.9991 10.4203L20.1031 14.5243L23.1276 11.4999Z" />
+        </svg>
+    </div>
+
+    <!-- header Section Start-->
+    <header class="header-area style-1 two">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+            <div class="logo-area">
+                <a href="index.html" class="header-logo">
+                    <img src="assets/img/header-logo.svg" alt="">
+                </a>
+            </div>
+            <div class="menu-area">
+                <div class="main-menu ">
+                    <div class="mobile-logo-area d-xl-none d-flex align-items-center">
+                        <a href="index.html" class="mobile-logo-wrap">
+                            <img src="assets/img/home1/header-logo.svg" alt="">
+                        </a>
+                        <div class="menu-close-btn">
+                            <i class="bi bi-x"></i>
+                        </div>
+                    </div>
+                    <ul class="menu-list justify-content-center">
+                        <li class="menu-item-has-children">
+                            <a href="index.html" class="drop-down"> HOME</a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="about-konndor-line.html" class="drop-down"> ABOUT US</a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="services.html" class="drop-down">SERVICES
+                                <i class="bi bi-caret-down-fill"></i>
+                            </a>
+                            <i class="bi bi-plus dropdown-icon"></i>
+                            <ul class="sub-menu">
+                                <li><a href="services.html#shipping-agent">SHIPPING AGENT</a></li>
+                                <li><a href="services.html#nvocc">NVOCC</a></li>
+                                <li class="menu-item-has-children">
+                                    <a href="services.html#freight-forwarding" class="drop-down">FREIGHT FORWARDING
+                                        <i class="bi bi-caret-right-fill"></i>
+                                    </a>
+                                    <i class="bi bi-plus dropdown-icon"></i>
+                                    <ul class="sub-menu">
+                                        <li><a href="#air-fright">AIR FRIGHT</a></li>
+                                        <li><a href="#sea-fright">SEA FRIGHT</a></li>
+                                        <li><a href="#rail-fright">RAIL FRIGHT</a></li>
+                                        <li><a href="#inland-fright">INLAND FRIGHT</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="services.html#logistics-activites">LOGISTICS ACTIVITES</a></li>
+                                <li><a href="services.html#project-cargo">PROJECT CARGO</a></li>
+                                <li><a href="services.html#perisable-goods">PERISABLE GOODS</a></li>
+                                <li><a href="services.html#specialization">SPECIALIZATION 40"REFEER</a></li>
+                                <li><a href="services.html#warhousing">WAREHOUSING</a></li>
+                                <li><a href="services.html#custom-clearance">CUSTOM CLEARANCE</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="contact-konndor-line.html" class="drop-down"> CONTACT US</a>
+                        </li>
+                    </ul>
+                    <a class="primary-btn2 btn-hover d-xl-none" href="#">
+                        Track &amp; Trace
+                        <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path
+                                    d="M5.83333 4.16667V0H4.16667V4.16667H0V5.83333H4.16667V10H5.83333V5.83333H10V4.16667H5.83333Z">
+                                </path>
+                            </g>
+                        </svg>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="contact-area">
+                    <div class="search-and-login">
+                        <div class="search-bar">
+                            <div class="search-btn">
+                                <a href="https://www.facebook.com/"><i class="bx bxl-facebook"></i></a>
+                            </div>
+                        </div>
+                        <div class="search-bar">
+                            <div class="search-btn">
+                                <a href="https://www.linkedin.com/"><i class="bx bxl-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="primary-btn2 white-bg btn-hover d-xl-flex d-none" href="#">
+                        Track & Trace
+                        <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path
+                                    d="M5.83333 4.16667V0H4.16667V4.16667H0V5.83333H4.16667V10H5.83333V5.83333H10V4.16667H5.83333Z" />
+                            </g>
+                        </svg>
+                        <span></span>
+                    </a>
+                </div>
+                <div class="sidebar-button mobile-menu-btn">
+                    <svg width="20" height="18" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1.29445 2.8421H10.5237C11.2389 2.8421 11.8182 2.2062 11.8182 1.42105C11.8182 0.635903 11.2389 0 10.5237 0H1.29445C0.579249 0 0 0.635903 0 1.42105C0 2.2062 0.579249 2.8421 1.29445 2.8421Z">
+                        </path>
+                        <path
+                            d="M1.23002 10.421H18.77C19.4496 10.421 20 9.78506 20 8.99991C20 8.21476 19.4496 7.57886 18.77 7.57886H1.23002C0.550421 7.57886 0 8.21476 0 8.99991C0 9.78506 0.550421 10.421 1.23002 10.421Z">
+                        </path>
+                        <path
+                            d="M18.8052 15.1579H10.2858C9.62563 15.1579 9.09094 15.7938 9.09094 16.5789C9.09094 17.3641 9.62563 18 10.2858 18H18.8052C19.4653 18 20 17.3641 20 16.5789C20 15.7938 19.4653 15.1579 18.8052 15.1579Z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header Section End-->
+
+
+    <!-- Breadcrumb Section Start -->
+    <div class="breadcrumb-section mb-120">
+        <div class="container">
+            <div class="breadcrumb-content pb-60">
+                <h1>Services</h1>
+
+            </div>
+        </div>
+        <div class="breadcrumb-img">
+            <img src="assets/img/innerpages/breadcrumb-bg-img1.jpg" alt="">
+        </div>
+    </div>
+    <!-- Breadcrumb Section End -->
+
+    <!-- -----------------------------------------------------section start--------------------------------------------------- -->
+
+    <section class="hero mb-120">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1>Never worry about your <span class="text-primary">website</span> ever again</h1>
+            </div>
+            <div class="row align-items-center g-4">
+                <!-- Left Tabs -->
+                <div class="col-lg-4">
+                    <div class="feature-card">
+                        <ul class="nav nav-pills flex-column">
+                            <li class="nav-item">
+                                <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#tab1">
+                                    <i class="bi bi-gear"></i> SHIPPING AGENT
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tab2">
+                                    <i class="bi bi-pencil-square"></i> PROJRCT CARGO
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tab3">
+                                    <i class="bi bi-graph-up"></i> PERISABLE GOODS
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tab4">
+                                    <i class="bi bi-google"></i> SPECIALIZATION
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tab5">
+                                    <i class="bi bi-google"></i> WAREHOUSING
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tab6">
+                                    <i class="bi bi-google"></i>CUSTOM CLEARENCE
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tab7">
+                                    <i class="bi bi-google"></i> FREIGHT FORWARDING
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tab8">
+                                    <i class="bi bi-google"></i> LOGISTICS ACTIVITES
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tab9">
+                                    <i class="bi bi-google"></i> NOVVC
+                                </button>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Center Content -->
+                <div class="col-lg-4">
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="tab1">
+
+                            <div class="col-lg-6">
+                                <div class="section-title wow animate fadeInDown" data-wow-delay="200ms"
+                                    data-wow-duration="1500ms">
+                                    <h2>Why Choose Us ?</h2>
+                                    <p>With our logistics solutions, the agriculture industry can thrive, ensuring
+                                        food security,
+                                        economic growth, and sustainability. Let us help you navigate the
+                                        complexities of
+                                        agricultural logistics with confidence and ease.</p>
+                                </div>
+                                <div class="feature-land-area">
+                                    <h5>Delivering beyond boundaries</h5>
+                                    <ul class="feature-list">
+                                        <li>
+                                            <svg width="22" height="22" viewBox="0 0 22 22"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="11" cy="11" r="11" />
+                                                <g>
+                                                    <path
+                                                        d="M15.2718 6.16237C13.6878 7.42573 11.6424 10.2128 10.4994 12.6792L10.1852 13.3706C10.1099 13.5364 9.87621 13.5413 9.79401 13.3789L9.21609 12.2381C8.45409 10.7341 8.41413 10.694 7.99305 10.9747C7.75245 11.1352 7.07049 11.5562 6.50913 11.8972C5.92773 12.2581 5.44641 12.5789 5.44641 12.6191C5.44641 12.6593 5.88753 12.9599 6.40881 13.3008C6.95025 13.6416 8.01297 14.5841 8.79501 15.3862L10.0271 16.6354C10.05 16.6586 10.0779 16.6764 10.1086 16.6873C10.1394 16.6983 10.1722 16.7022 10.2047 16.6987C10.2372 16.6952 10.2684 16.6845 10.2961 16.6672C10.3239 16.65 10.3474 16.6267 10.3649 16.5991L10.9808 15.6266C12.5249 13.2606 14.8709 10.6538 16.1141 9.99217C16.6153 9.73141 16.6353 9.67129 16.4349 9.08977C16.3146 8.70877 16.2745 7.82653 16.3346 6.88417C16.4148 6.00181 16.4349 5.30005 16.4148 5.30005C16.3947 5.30005 15.8733 5.68117 15.2718 6.16237Z" />
+                                                </g>
+                                            </svg>
+                                            SHIPPING AGENT
+                                        </li>
+                                        <li>
+                                            <svg width="22" height="22" viewBox="0 0 22 22"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="11" cy="11" r="11" />
+                                                <g>
+                                                    <path
+                                                        d="M15.2718 6.16237C13.6878 7.42573 11.6424 10.2128 10.4994 12.6792L10.1852 13.3706C10.1099 13.5364 9.87621 13.5413 9.79401 13.3789L9.21609 12.2381C8.45409 10.7341 8.41413 10.694 7.99305 10.9747C7.75245 11.1352 7.07049 11.5562 6.50913 11.8972C5.92773 12.2581 5.44641 12.5789 5.44641 12.6191C5.44641 12.6593 5.88753 12.9599 6.40881 13.3008C6.95025 13.6416 8.01297 14.5841 8.79501 15.3862L10.0271 16.6354C10.05 16.6586 10.0779 16.6764 10.1086 16.6873C10.1394 16.6983 10.1722 16.7022 10.2047 16.6987C10.2372 16.6952 10.2684 16.6845 10.2961 16.6672C10.3239 16.65 10.3474 16.6267 10.3649 16.5991L10.9808 15.6266C12.5249 13.2606 14.8709 10.6538 16.1141 9.99217C16.6153 9.73141 16.6353 9.67129 16.4349 9.08977C16.3146 8.70877 16.2745 7.82653 16.3346 6.88417C16.4148 6.00181 16.4349 5.30005 16.4148 5.30005C16.3947 5.30005 15.8733 5.68117 15.2718 6.16237Z" />
+                                                </g>
+                                            </svg>
+                                            PROJRCT CARGO
+                                        </li>
+                                        <li>
+                                            <svg width="22" height="22" viewBox="0 0 22 22"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="11" cy="11" r="11" />
+                                                <g>
+                                                    <path
+                                                        d="M15.2718 6.16237C13.6878 7.42573 11.6424 10.2128 10.4994 12.6792L10.1852 13.3706C10.1099 13.5364 9.87621 13.5413 9.79401 13.3789L9.21609 12.2381C8.45409 10.7341 8.41413 10.694 7.99305 10.9747C7.75245 11.1352 7.07049 11.5562 6.50913 11.8972C5.92773 12.2581 5.44641 12.5789 5.44641 12.6191C5.44641 12.6593 5.88753 12.9599 6.40881 13.3008C6.95025 13.6416 8.01297 14.5841 8.79501 15.3862L10.0271 16.6354C10.05 16.6586 10.0779 16.6764 10.1086 16.6873C10.1394 16.6983 10.1722 16.7022 10.2047 16.6987C10.2372 16.6952 10.2684 16.6845 10.2961 16.6672C10.3239 16.65 10.3474 16.6267 10.3649 16.5991L10.9808 15.6266C12.5249 13.2606 14.8709 10.6538 16.1141 9.99217C16.6153 9.73141 16.6353 9.67129 16.4349 9.08977C16.3146 8.70877 16.2745 7.82653 16.3346 6.88417C16.4148 6.00181 16.4349 5.30005 16.4148 5.30005C16.3947 5.30005 15.8733 5.68117 15.2718 6.16237Z" />
+                                                </g>
+                                            </svg>
+                                            PERISABLE GOODS
+                                        </li>
+                                        <li>
+                                            <svg width="22" height="22" viewBox="0 0 22 22"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="11" cy="11" r="11" />
+                                                <g>
+                                                    <path
+                                                        d="M15.2718 6.16237C13.6878 7.42573 11.6424 10.2128 10.4994 12.6792L10.1852 13.3706C10.1099 13.5364 9.87621 13.5413 9.79401 13.3789L9.21609 12.2381C8.45409 10.7341 8.41413 10.694 7.99305 10.9747C7.75245 11.1352 7.07049 11.5562 6.50913 11.8972C5.92773 12.2581 5.44641 12.5789 5.44641 12.6191C5.44641 12.6593 5.88753 12.9599 6.40881 13.3008C6.95025 13.6416 8.01297 14.5841 8.79501 15.3862L10.0271 16.6354C10.05 16.6586 10.0779 16.6764 10.1086 16.6873C10.1394 16.6983 10.1722 16.7022 10.2047 16.6987C10.2372 16.6952 10.2684 16.6845 10.2961 16.6672C10.3239 16.65 10.3474 16.6267 10.3649 16.5991L10.9808 15.6266C12.5249 13.2606 14.8709 10.6538 16.1141 9.99217C16.6153 9.73141 16.6353 9.67129 16.4349 9.08977C16.3146 8.70877 16.2745 7.82653 16.3346 6.88417C16.4148 6.00181 16.4349 5.30005 16.4148 5.30005C16.3947 5.30005 15.8733 5.68117 15.2718 6.16237Z" />
+                                                </g>
+                                            </svg>
+                                            SPECIALIZATION
+                                        </li>
+                                        <li>
+                                            <svg width="22" height="22" viewBox="0 0 22 22"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="11" cy="11" r="11" />
+                                                <g>
+                                                    <path
+                                                        d="M15.2718 6.16237C13.6878 7.42573 11.6424 10.2128 10.4994 12.6792L10.1852 13.3706C10.1099 13.5364 9.87621 13.5413 9.79401 13.3789L9.21609 12.2381C8.45409 10.7341 8.41413 10.694 7.99305 10.9747C7.75245 11.1352 7.07049 11.5562 6.50913 11.8972C5.92773 12.2581 5.44641 12.5789 5.44641 12.6191C5.44641 12.6593 5.88753 12.9599 6.40881 13.3008C6.95025 13.6416 8.01297 14.5841 8.79501 15.3862L10.0271 16.6354C10.05 16.6586 10.0779 16.6764 10.1086 16.6873C10.1394 16.6983 10.1722 16.7022 10.2047 16.6987C10.2372 16.6952 10.2684 16.6845 10.2961 16.6672C10.3239 16.65 10.3474 16.6267 10.3649 16.5991L10.9808 15.6266C12.5249 13.2606 14.8709 10.6538 16.1141 9.99217C16.6153 9.73141 16.6353 9.67129 16.4349 9.08977C16.3146 8.70877 16.2745 7.82653 16.3346 6.88417C16.4148 6.00181 16.4349 5.30005 16.4148 5.30005C16.3947 5.30005 15.8733 5.68117 15.2718 6.16237Z" />
+                                                </g>
+                                            </svg>
+                                            WAREHOUSING
+                                        </li>
+                                        <li>
+                                            <svg width="22" height="22" viewBox="0 0 22 22"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="11" cy="11" r="11" />
+                                                <g>
+                                                    <path
+                                                        d="M15.2718 6.16237C13.6878 7.42573 11.6424 10.2128 10.4994 12.6792L10.1852 13.3706C10.1099 13.5364 9.87621 13.5413 9.79401 13.3789L9.21609 12.2381C8.45409 10.7341 8.41413 10.694 7.99305 10.9747C7.75245 11.1352 7.07049 11.5562 6.50913 11.8972C5.92773 12.2581 5.44641 12.5789 5.44641 12.6191C5.44641 12.6593 5.88753 12.9599 6.40881 13.3008C6.95025 13.6416 8.01297 14.5841 8.79501 15.3862L10.0271 16.6354C10.05 16.6586 10.0779 16.6764 10.1086 16.6873C10.1394 16.6983 10.1722 16.7022 10.2047 16.6987C10.2372 16.6952 10.2684 16.6845 10.2961 16.6672C10.3239 16.65 10.3474 16.6267 10.3649 16.5991L10.9808 15.6266C12.5249 13.2606 14.8709 10.6538 16.1141 9.99217C16.6153 9.73141 16.6353 9.67129 16.4349 9.08977C16.3146 8.70877 16.2745 7.82653 16.3346 6.88417C16.4148 6.00181 16.4349 5.30005 16.4148 5.30005C16.3947 5.30005 15.8733 5.68117 15.2718 6.16237Z" />
+                                                </g>
+                                            </svg>
+                                            CUSTOM CLEARENCE
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-5 col-lg-6 wow animate fadeInUp" data-wow-delay="400ms"
+                                data-wow-duration="1500ms">
+                                <div class="industries-why-choose-img-wrap">
+                                    <div class="img-1">
+                                        <img src="assets/img/innerpages/industries-why-choose-us-img.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="tab2">
+                            <h4>Professional Copywriting</h4>
+                            <p>High converting custom written content that builds trust and drives sales.</p>
+                        </div>
+                        <div class="tab-pane fade" id="tab3">
+                            <h4>SEO Optimization</h4>
+                            <p>We rank your business higher on Google using proven SEO strategies.</p>
+                        </div>
+                        <div class="tab-pane fade" id="tab4">
+                            <h4>Google Business Optimization</h4>
+                            <p>Boost your local visibility and get more customers from search.</p>
+                        </div>
+                        <button class="hero-btn mt-3">Start Your Website Today →</button>
+                    </div>
+                </div>
+
+                <!-- Right Image -->
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Section Start -->
+    <footer class="footer-section style-2">
+        <div class="footer-menu">
+            <div class="container">
+                <div class="row gy-5 justify-content-between">
+                    <div class="col-xl-4 col-lg-3 col-md-4 col-sm-6">
+                        <div class="footer-widget">
+
+                            <div class="footer-logo-and-social">
+                                <div class="logo-area">
+                                    <a href="#"><img src="assets/img/home2/Footer-logo-h2.html" alt=""></a>
+                                </div>
+                                <p>Office: 504, 5th Floor, Kukreja Centre, B-Wing, Plot No. 13, Sector-11, CBD Belapur,
+                                    Navi Mumbai 400614</p>
+                                <ul class="social-list">
+                                    <li><a href="https://www.facebook.com/"><i class="bx bxl-facebook"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/"><i class="bx bxl-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex justify-content-lg-start justify-content-md-center justify-content-sm-center">
+                        <div class="footer-widget">
+                            <div class="widget-title">
+                                <h3>Quick Links</h3>
+                            </div>
+                            <ul class="widget-list">
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="about-konndor-line.html">ABOUT US</a></li>
+                                <li><a href="services.html">SERVICS</a></li>
+                                <li><a href="contact-konndor-line.html">CONTACT US</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-lg-center justify-content-md-end">
+                        <div class="footer-widget">
+                            <div class="widget-title">
+                                <h3>Our Services</h3>
+                            </div>
+                            <ul class="widget-list">
+                                <li><a href="#shipping-agent">SHIPPING AGENT</a></li>
+                                <li><a href="#project-cargo">PROJRCT CARGO</a></li>
+                                <li><a href="#perisable-goods"> PERISABLE GOODS</a></li>
+                                <li><a href="#specialization">SPECIALIZATION</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div
+                        class="col-xl-3 col-lg-3 col-md-4 col-sm-6 d-flex justify-content-lg-end justify-content-md-start justify-content-sm-center">
+                        <div class="footer-widget">
+                            <div class="widget-title">
+                                <h3>Support</h3>
+                            </div>
+                            <ul class="widget-list">
+
+                                <li><a href="#warehousing">WAREHOUSING</a></li>
+                                <li><a href="#custom-clearence">CUSTOM CLEARENCE</a></li>
+                                <li><a href="#freight-forwarding">FREIGHT FORWARDING</a></li>
+                                <li><a href="#logistics-activites">LOGISTICS ACTIVITES</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Copyright <span id="year"></span> <a href="#">konndor-line</a> | All Right Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!--  Main jQuery  -->
+    <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/daterangepicker.min.js"></script>
+
+    <!-- Popper and Bootstrap JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <!-- Swiper slider JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <!-- Waypoints JS -->
+    <script src="assets/js/waypoints.min.js"></script>
+    <!-- Counterup JS -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- Wow JS -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Gsap  JS -->
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/select-dropdown.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+        integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+        data-cf-beacon='{"version":"2024.11.0","token":"70834e4b23964a2eaf7cf4ec0e5e9a84","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
