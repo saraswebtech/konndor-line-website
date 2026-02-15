@@ -1972,7 +1972,7 @@ header.style-1 {
     padding: 18px 0;
   }
 }
-header.style-1.sticky {
+ header.style-1/*.sticky */{ 
   box-sizing: border-box;
   background-color: var(--black-color);
   box-shadow: 5px 3px 40px rgba(0, 72, 88, 0.1);
@@ -2120,7 +2120,7 @@ header.style-1 .nav-right .search-and-login .search-bar .search-btn {
   max-width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: rgba(var(--white-color-opc), 0.2);
+  background-color: rgb(255, 255, 255);
   border: 1px solid rgba(var(--white-color-opc), 0.1);
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
@@ -9701,7 +9701,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .footer-section .footer-menu .footer-widget .widget-list li a {
   font-family: var(--font-suse);
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15px;
   text-transform: capitalize;
   color: var(--dark-text-color);
   display: flex;
@@ -9759,7 +9759,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: unset;
-  padding: 0 70px 70px;
+  padding: 0 70px;
 }
 @media (min-width: 1400px) and (max-width: 1599px) {
   .footer-section.style-2 {
@@ -9793,7 +9793,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   color: var(--white-color);
 }
 .footer-section.style-2 .footer-menu {
-  padding: 110px 0;
+  padding: 80px 0;
 }
 @media (min-width: 1400px) and (max-width: 1599px) {
   .footer-section.style-2 .footer-menu {
@@ -12155,7 +12155,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 130px;
+  /* gap: 130px; */
   row-gap: 70px;
   margin-bottom: 60px;
 }
