@@ -9597,6 +9597,15 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   margin-bottom: 25px;
   max-width: 312px;
 }
+.footer-section .footer-widget p {
+  font-family: var(--font-suse);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--dark-text-color);
+  margin-bottom: 25px;
+  max-width: 312px;
+}
 .footer-section .footer-logo-and-social .social-list {
   padding: 0;
   margin: 0;
@@ -9658,9 +9667,9 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .footer-section .footer-menu .footer-widget .widget-title h3 {
   font-family: var(--font-bricolageGrotesque);
   font-weight: 500;
-  font-size: 28px;
+  font-size: 20px;
   color: var(--white-color);
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 @media (max-width: 991px) {
   .footer-section .footer-menu .footer-widget .widget-title h3 {
@@ -9678,7 +9687,7 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   list-style: none;
 }
 .footer-section .footer-menu .footer-widget .widget-list li {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 @media (max-width: 1199px) {
   .footer-section .footer-menu .footer-widget .widget-list li {
@@ -9734,6 +9743,42 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
   color: var(--title-color);
   line-height: 1;
 }
+
+/* Two Column Widget List */
+.footer-section .footer-menu .footer-widget .widget-list.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px 30px;
+}
+
+.footer-section .footer-menu .footer-widget .widget-list.two-column li {
+  margin-bottom: 17px;
+  width: 170px;
+}
+
+.footer-section .footer-menu .footer-widget .widget-list.two-column li a {
+  font-size: 13px;
+  transition: all 0.3s ease;
+}
+
+.footer-section .footer-menu .footer-widget .widget-list.two-column li a:hover {
+  color: var(--primary-color1);
+}
+
+/* Menu Active State Custom Color */
+header.style-1.two .main-menu > ul > li.active > a,
+header.style-1.two .main-menu > ul > li.active > a i,
+header.style-1.two .main-menu > ul > li.active > i,
+header.style-1.two .main-menu > ul > li.active .dropdown-icon {
+  color: #e53b00 !important;
+}
+
+header.style-1.two .main-menu > ul > li:hover > a,
+header.style-1.two .main-menu > ul > li:hover > a i,
+header.style-1.two .main-menu > ul > li:hover > i {
+  color: #e53b00 !important;
+}
+
 .footer-section .footer-bottom {
   border-top: 1px solid var(--border-color2);
   padding: 20px 0;
