@@ -21771,7 +21771,7 @@ header.style-1.two .main-menu > ul > li:hover > i {
   z-index: 1;
 }
 .career-opportunities-section .career-opportunities-card-wrapper .career-opportunities-card .career-opportunities-content {
-  padding: 30px;
+  padding: 20px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .career-opportunities-section .career-opportunities-card-wrapper .career-opportunities-card .career-opportunities-content {
@@ -21802,7 +21802,7 @@ header.style-1.two .main-menu > ul > li:hover > i {
   color: var(--title-color);
   font-family: var(--font-bricolageGrotesque);
   font-weight: 600;
-  font-size: 22px;
+  font-size: 18px;
   background: linear-gradient(to bottom, var(--title-color) 0%, var(--title-color) 98%);
   background-size: 0px 1px;
   background-repeat: no-repeat;
