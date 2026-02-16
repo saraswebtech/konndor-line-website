@@ -239,6 +239,37 @@
     margin-bottom: 80px;
     color: var(--title-color);
 }
+.breadcrumb-section {
+    height: 480px;
+    position: relative;
+}
+
+.breadcrumb-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 0;
+}
+
+.breadcrumb-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+}
+
+.breadcrumb-content {
+    position: relative;
+    z-index: 2;
+}
+
     </style>
     <!-- Title -->
     <title>Services by Konndor Line | Konndor Industries Limited</title>
@@ -311,7 +342,7 @@
                                 <li><a href="services.html#logistics-activites">LOGISTICS ACTIVITES</a></li>
                                 <li><a href="services.html#project-cargo">PROJECT CARGO</a></li>
                                 <li><a href="services.html#perisable-goods">PERISABLE GOODS</a></li>
-                                <li><a href="services.html#specialization">SPECIALIZATION 40"REFEER</a></li>
+                                <li><a href="services.html#specialization">SPECIALIZATION 40' REEFER</a></li>
                                 <li><a href="services.html#warhousing">WAREHOUSING</a></li>
                                 <li><a href="services.html#custom-clearance">CUSTOM CLEARANCE</a></li>
                             </ul>
@@ -378,11 +409,26 @@
 
 
     <!-- Breadcrumb Section Start -->
-    <div class="breadcrumb-section mb-80" style="padding-top: 82px;">
-        <div class="breadcrumb-img">
-            <img src="assets/img/innerpages/breadcrumb-bg-img1.jpg" alt="">
+<div class="breadcrumb-section mb-80 position-relative" style="margin-top: 82px; overflow: hidden;">
+
+    <!-- Background Video -->
+    <video autoplay muted loop playsinline class="breadcrumb-video">
+        <source src="assets/video/home3-video.mp4" type="video/mp4">
+    </video>
+    <div class="breadcrumb-overlay"></div>
+    <!-- Optional Content (if you want heading over video) -->
+    <div class="container position-relative">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                    <div class="breadcrumb-content section-title text-center mb-50">
+                        <h2 class="text-white">Our <span>Services</span></h2>
+                        <p class="text-white">Backed by strong global partnerships, advanced operational systems, and a commitment to excellence, our services are structured to ensure efficiency, transparency, and timely delivery at every stage. Whether managing complex project shipments or routine cargo movements, Konndor Line stands as your trusted logistics partner for dependable and cost-effective solutions worldwide.</p>
+                    </div>
+            </div>
         </div>
     </div>
+</div>
+
     <!-- Breadcrumb Section End -->
 
     <!-- -----------------------------------------------------section start--------------------------------------------------- -->
@@ -395,10 +441,9 @@
                     <div class="company-intro-wrapper">
                         <div class="company-content wow animate fadeInDown" data-wow-delay="200ms"
                             data-wow-duration="1500ms" style="margin-bottom: 20px;">
-                            <span>Since - 1996</span>
-                            <h2>We began as a small-scale transportation provider, serving local businesses with
-                                reliable and
-                                timely deliveries.</h2>
+                            <span>Since - 1983</span>
+                            <h2 style="font-size: 20px;">At Konndor Line, we provide comprehensive, reliable, and customized logistics solutions designed to support global trade and seamless cargo movement. With expertise across shipping agency, NVOCC operations, freight forwarding, project cargo handling, cold chain logistics, warehousing, customs clearance, and integrated supply chain management, we deliver end-to-end services tailored to meet diverse industry requirements.
+</h2>
                         </div>
                     </div>
                 </div>
@@ -410,14 +455,6 @@
     <!-- Vertical Tabs Section Start -->
     <div class="vertical-tabs-section mb-120">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title text-center mb-50">
-                        <h2>Our <span>Services</span></h2>
-                        <p>Comprehensive logistics solutions tailored to meet your business needs</p>
-                    </div>
-                </div>
-            </div>
             <div class="row">
                 <div class="col-lg-3">
                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -431,7 +468,7 @@
                             <i class="bi bi-truck"></i> Freight Forwarding
                         </button>
                         <button class="nav-link" id="v-pills-logistics-tab" data-bs-toggle="pill" data-bs-target="#v-pills-logistics" type="button" role="tab" aria-controls="v-pills-logistics" aria-selected="false">
-                            <i class="bi bi-layout-text-window-reverse"></i> Logistics Activities
+                            <i class="bi bi-layout-text-window-reverse"></i> Logistics & Supply Chain
                         </button>
                         <button class="nav-link" id="v-pills-project-tab" data-bs-toggle="pill" data-bs-target="#v-pills-project" type="button" role="tab" aria-controls="v-pills-project" aria-selected="false">
                             <i class="bi bi-building"></i> Project Cargo
@@ -440,7 +477,7 @@
                             <i class="bi bi-snow"></i> Perishable Goods
                         </button>
                         <button class="nav-link" id="v-pills-reefer-tab" data-bs-toggle="pill" data-bs-target="#v-pills-reefer" type="button" role="tab" aria-controls="v-pills-reefer" aria-selected="false">
-                            <i class="bi bi-thermometer-half"></i> Specialization 40"Reefer
+                            <i class="bi bi-thermometer-half"></i> 40' Reefer Specialization
                         </button>
                         <button class="nav-link" id="v-pills-warehousing-tab" data-bs-toggle="pill" data-bs-target="#v-pills-warehousing" type="button" role="tab" aria-controls="v-pills-warehousing" aria-selected="false">
                             <i class="bi bi-house-door"></i> Warehousing
@@ -466,7 +503,7 @@
 
                                         <div class="founder-img-wrapper">
                                             <div class="founder-img-wrap">
-                                                <img src="assets/img/innerpages/founder-info-img.png" alt="Founder Image">
+                                                <img src="assets/img/services/agent.jpg" alt="Shipping Agent">
                                              </div>
                                         </div>
                                         <div class="founder-content">
@@ -502,7 +539,7 @@
                                         </div>
                                         <div class="founder-img-wrapper">
                                             <div class="founder-img-wrap">
-                                                <img src="assets/img/innerpages/founder-info-img.png" alt="Founder Image">
+                                                <img src="assets/img/services/nvocc.jpg" alt="NVOCC Services Image">
                                              </div>
                                         </div>
                                         <div class="founder-content">
@@ -539,7 +576,7 @@
                                         </div>
                                         <div class="founder-img-wrapper">
                                             <div class="founder-img-wrap">
-                                                <img src="assets/img/innerpages/founder-info-img.png" alt="Founder Image">
+                                                <img src="assets/img/services/freight.jpg" alt="Freight Forwarding">
                                              </div>
                                         </div>
                                         <div class="founder-content">
@@ -560,19 +597,44 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="v-pills-logistics" role="tabpanel" aria-labelledby="v-pills-logistics-tab">
-                            <div class="vertical-tab-content">
-                                <h3>Logistics Activities</h3>
-                                <p>End-to-end logistics solutions tailored to your business needs. We manage the complete supply chain process from warehousing to final delivery.</p>
-                                <ul class="service-features">
-                                    <li><i class="bi bi-check-circle-fill"></i> Supply chain management</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Inventory management</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Distribution services</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Order fulfillment</li>
-                                </ul>
+                            <div class="founder-info-section">
+                                    <div class="founder-info-wrapper">
+                                        <div class="founder-content">
+                                            <h3>Logistics & Supply Chain Management</h3>
+                                                <hr>
+                                                <p>
+                                                    At Konndor Line, we deliver integrated Logistics & Supply Chain Management solutions designed to 
+                                                    <span>optimize operational efficiency, reduce costs, and ensure seamless end-to-end cargo movement.</span>
+                                                </p>
+
+                                                <p style="font-size: 16px;font-weight: 200;">
+                                                    Our comprehensive logistics services cover planning, coordination, and execution across the entire supply chain — from procurement and transportation to warehousing and final distribution. By combining advanced tracking systems, strategic partnerships, and industry expertise, we provide complete visibility and control over your cargo. We focus on streamlining processes, improving turnaround times, and enhancing reliability to help businesses operate more efficiently in competitive global markets.
+                                                </p>
+                                        </div>
+                                        <div class="founder-img-wrapper">
+                                            <div class="founder-img-wrap">
+                                                <img src="assets/img/services/logistics.jpg" alt="Logistics & Supply Chain Management Image">
+                                             </div>
+                                        </div>
+                                        <div class="founder-content">
+                                            <p class="mt-40">Our Logistics & Supply Chain Solutions Include:</p>
+                                        </div>
+                                            <ul class="service-features">
+                                                <li><i class="bi bi-check-circle-fill"></i> End-to-end supply chain coordination</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Multimodal transportation management</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Inventory planning and demand forecasting</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Distribution and network optimization</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Real-time cargo tracking and reporting</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Vendor and carrier management</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Risk management and contingency planning</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Performance analysis and cost optimization</li>
+                                            </ul>
+
+                                </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="v-pills-project" role="tabpanel" aria-labelledby="v-pills-project-tab">
-                                <div class="founder-info-section">
+                            <div class="founder-info-section">
                                     <div class="founder-info-wrapper">
                                         <div class="founder-content">
                                             <h3>Project Cargo Services</h3>
@@ -588,7 +650,7 @@
                                         </div>
                                         <div class="founder-img-wrapper">
                                             <div class="founder-img-wrap">
-                                                <img src="assets/img/innerpages/founder-info-img.png" alt="Founder Image">
+                                                <img src="assets/img/services/cargo.jpg" alt="Project Cargo Services">
                                              </div>
                                         </div>
                                         <div class="founder-content">
@@ -608,51 +670,148 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="v-pills-perishable" role="tabpanel" aria-labelledby="v-pills-perishable-tab">
-                            <div class="vertical-tab-content">
-                                <h3>Perishable Goods</h3>
-                                <p>Temperature-controlled logistics for perishable items including food, pharmaceuticals, and other sensitive cargo requiring specific temperature conditions.</p>
-                                <ul class="service-features">
-                                    <li><i class="bi bi-check-circle-fill"></i> Cold chain management</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Temperature monitoring</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Refrigerated transport</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Compliance with food safety standards</li>
-                                </ul>
+                            <div class="founder-info-section">
+                                    <div class="founder-info-wrapper">
+                                        <div class="founder-content">
+                                            <h3>Perishable Goods Logistics</h3>
+                                                <hr>
+                                                <p>
+                                                    At Konndor Line, we provide specialized Perishable Goods logistics solutions designed to 
+                                                    <span>maintain product freshness, quality, and safety throughout the entire supply chain.</span>
+                                                </p>
+
+                                                <p style="font-size: 16px;font-weight: 200;">
+                                                    We understand the critical importance of temperature control and time-sensitive delivery when handling perishable cargo such as food products, pharmaceuticals, and agricultural goods. Our cold chain logistics services are supported by advanced reefer container technology, real-time temperature monitoring, and strict compliance with international standards. From origin pickup to final delivery, we ensure optimal handling conditions to preserve product integrity and minimize transit risks.
+                                                </p>
+                                        </div>
+                                        <div class="founder-img-wrapper">
+                                            <div class="founder-img-wrap">
+                                                <img src="assets/img/services/perishable.jpg" alt="Perishable Goods">
+                                             </div>
+                                        </div>
+                                        <div class="founder-content">
+                                            <p class="mt-40">Our Perishable Goods Services Include:</p>
+                                        </div>
+                                            <ul class="service-features">
+                                                <li><i class="bi bi-check-circle-fill"></i> Temperature-controlled reefer container solutions</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Cold chain management and monitoring</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Handling of food, pharmaceuticals, and agricultural cargo</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Real-time temperature tracking and reporting</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Compliance with international safety and hygiene standards</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Rapid transit solutions for time-sensitive shipments</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> End-to-end documentation and customs coordination</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Secure handling and minimized spoilage risk</li>
+                                            </ul>
+                                </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="v-pills-reefer" role="tabpanel" aria-labelledby="v-pills-reefer-tab">
-                            <div class="vertical-tab-content">
-                                <h3>Specialization 40" Reefer</h3>
-                                <p>Expert handling of 40-foot refrigerated containers for temperature-sensitive cargo. Our reefer services ensure product integrity throughout the shipping process.</p>
-                                <ul class="service-features">
-                                    <li><i class="bi bi-check-circle-fill"></i> Advanced temperature control</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Real-time temperature monitoring</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Pre-cooling services</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Global reefer container availability</li>
-                                </ul>
+                            <div class="founder-info-section">
+                                    <div class="founder-info-wrapper">
+                                        <div class="founder-content">
+                                            <h3>40' Reefer Container Specialization</h3>
+                                            <hr>
+                                            <p>
+                                                At Konndor Line, we specialize in 40' Reefer Container solutions designed to 
+                                                <span>ensure precise temperature control and safe transportation of perishable and sensitive cargo worldwide.</span>
+                                            </p>
+
+                                            <p style="font-size: 16px;font-weight: 200;">
+                                                Our advanced 40-foot refrigerated containers are equipped with modern cooling technology and real-time monitoring systems to maintain consistent temperature throughout transit. Ideal for food products, pharmaceuticals, and other temperature-sensitive shipments, our reefer solutions are supported by strict cold chain protocols and experienced handling teams. From pre-trip inspections to final delivery, we ensure product integrity, regulatory compliance, and timely transportation across global routes.
+                                            </p>
+                                        </div>
+                                        <div class="founder-img-wrapper">
+                                            <div class="founder-img-wrap">
+                                                <img src="assets/img/services/reefer.jpg" alt="40' Reefer Container Image">
+                                             </div>
+                                        </div>
+                                        <div class="founder-content">
+                                            <p class="mt-40">Our 40' Reefer Container Services Include:</p>
+                                        </div>
+                                            <ul class="service-features">
+                                                <li><i class="bi bi-check-circle-fill"></i> Advanced temperature-controlled 40' reefer containers</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Real-time temperature monitoring and reporting</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Pre-trip inspection and equipment testing</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Cold chain compliance and quality assurance</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Handling of food, pharmaceuticals, and perishables</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Global reefer network and container availability</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Port power connection and genset arrangements</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> End-to-end coordination and documentation support</li>
+                                            </ul>
+                                </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="v-pills-warehousing" role="tabpanel" aria-labelledby="v-pills-warehousing-tab">
-                            <div class="vertical-tab-content">
-                                <h3>Warehousing</h3>
-                                <p>Secure and efficient warehousing solutions for your cargo. We provide storage facilities with advanced inventory management systems.</p>
-                                <ul class="service-features">
-                                    <li><i class="bi bi-check-circle-fill"></i> Secure storage facilities</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Inventory management</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Pick and pack services</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Cross-docking services</li>
-                                </ul>
+                            <div class="founder-info-section">
+                                    <div class="founder-info-wrapper">
+                                        <div class="founder-content">
+                                            <h3>Warehousing Services</h3>
+                                                <hr>
+                                                <p>
+                                                    At Konndor Line, we offer secure and strategically managed Warehousing solutions designed to 
+                                                    <span>optimize inventory control, improve distribution efficiency, and support seamless supply chain operations.</span>
+                                                </p>
+
+                                                <p style="font-size: 16px;font-weight: 200;">
+                                                    Our modern warehousing facilities are equipped to handle a wide range of cargo, including general goods, bonded cargo, and temperature-sensitive products. With advanced inventory management systems and trained personnel, we ensure accurate stock control, safe storage, and timely dispatch. From short-term storage to long-term distribution support, our warehousing solutions are designed to enhance operational efficiency while reducing handling risks and transit delays.
+                                                </p>
+                                        </div>
+                                        <div class="founder-img-wrapper">
+                                            <div class="founder-img-wrap">
+                                                <img src="assets/img/services/warehousing.jpg" alt="Warehousing Services">
+                                             </div>
+                                        </div>
+                                        <div class="founder-content">
+                                            <p class="mt-40">Our Warehousing Services Include:</p>
+                                        </div>
+                                            <ul class="service-features">
+                                                <li><i class="bi bi-check-circle-fill"></i> Secure short-term and long-term storage solutions</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Bonded warehousing facilities</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Inventory management and stock control systems</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Pick-and-pack and order fulfillment services</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Cross-docking and cargo consolidation</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Temperature-controlled storage options</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Distribution and last-mile coordination</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Safe handling and cargo security monitoring</li>
+                                            </ul>
+
+                                </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="v-pills-customs" role="tabpanel" aria-labelledby="v-pills-customs-tab">
-                            <div class="vertical-tab-content">
-                                <h3>Customs Clearance</h3>
-                                <p>Professional customs clearance services to ensure smooth cross-border transactions. We handle all documentation and regulatory requirements.</p>
-                                <ul class="service-features">
-                                    <li><i class="bi bi-check-circle-fill"></i> Import/Export documentation</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Duty and tax calculation</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Regulatory compliance</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Trade consulting</li>
-                                </ul>
+                                <div class="founder-info-section">
+                                    <div class="founder-info-wrapper">
+                                        <div class="founder-content">
+                                            <h3>Customs Clearance Services</h3>
+                                            <hr>
+                                            <p>
+                                                At Konndor Line, we provide efficient and compliant Customs Clearance services designed to 
+                                                <span>ensure smooth cargo movement across international borders without delays or regulatory complications.</span>
+                                            </p>
+
+                                            <p style="font-size: 16px;font-weight: 200;">
+                                                Navigating customs regulations can be complex, but our experienced team simplifies the process through accurate documentation, regulatory expertise, and proactive coordination with customs authorities. We manage import and export clearances, duty assessments, tariff classifications, and compliance procedures to prevent unnecessary delays and penalties. With up-to-date knowledge of international trade regulations, we ensure your shipments are processed quickly, transparently, and in full compliance with applicable laws.
+                                            </p>
+                                        </div>
+                                        <div class="founder-img-wrapper">
+                                            <div class="founder-img-wrap">
+                                                <img src="assets/img/services/custom.jpg" alt="Customs Clearance Services">
+                                             </div>
+                                        </div>
+                                        <div class="founder-content">
+                                            <p class="mt-40">Our Customs Clearance Services Include:</p>
+                                        </div>
+                                            <ul class="service-features">
+                                                <li><i class="bi bi-check-circle-fill"></i> Import and export customs clearance</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Documentation preparation and verification</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> HS code classification and duty calculation</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Regulatory compliance and trade advisory</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Coordination with customs authorities</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Handling of special permits and certifications</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Risk assessment and inspection support</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Timely clearance to minimize storage and demurrage costs</li>
+                                            </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -664,7 +823,7 @@
     <!-- Transit Section Start -->
     <div class="transit-section mb-120">
         <div class="container">
-            <span>We’re supply chain in the world-wide.</span>
+            <span>Powering Global Supply Chains Worldwide — 26,000+ Successful Shipments and Counting</span>
             <svg class="line" height="6" viewBox="0 0 1320 6" xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M5 2.5L0 0.113249V5.88675L5 3.5V2.5ZM1315 3.5L1320 5.88675V0.113249L1315 2.5V3.5ZM4.5 3V3.5H1315.5V3V2.5H4.5V3Z" />
@@ -681,8 +840,7 @@
                             </g>
                         </svg>
                     </div>
-                    <p>Today, we are proud to be a leader in the industry, known for our unwavering dedication to
-                        quality and customer satisfaction.</p>
+                    <p>Connecting industries and markets worldwide, we provide integrated logistics solutions built on precision, speed, and trust.</p>
                 </div>
             </div>
         </div>
