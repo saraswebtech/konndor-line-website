@@ -6261,9 +6261,9 @@ header.style-4 .mobile-logo-area .menu-close-btn:hover i {
 .home1-contact-info .contact-wrapper .contact-area .single-contact h5 {
   font-family: var(--font-bricolageGrotesque);
   font-weight: 600;
-  font-size: 22px;
+  font-size: 15px;
   line-height: 28px;
-  margin-bottom: 23px;
+  margin-bottom: 10px;
   max-width: 250px;
   color: var(--title-color);
 }
