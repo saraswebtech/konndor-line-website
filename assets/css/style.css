@@ -10020,7 +10020,7 @@ header.style-1.two .main-menu > ul > li:hover > i {
 .home2-banner-section .banner-wrapper .banner-content h1 {
   font-family: var(--font-bricolageGrotesque);
   font-weight: 800;
-  font-size: 70px;
+  font-size: 50px;
   line-height: 1.1;
   color: var(--title-color);
 }
@@ -11614,6 +11614,16 @@ header.style-1.two .main-menu > ul > li:hover > i {
   display: flex;
   align-items: center;
   gap: 34px;
+  
+}
+.transit-section .content .right-content > :first-child {
+  flex: 0 0 5%;
+  max-width: 5%;
+}
+
+.transit-section .content .right-content > :last-child {
+  flex: 0 0 95%;
+  max-width: 95%;
 }
 @media (max-width: 1199px) {
   .transit-section .content .right-content {
