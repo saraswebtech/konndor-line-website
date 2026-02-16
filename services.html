@@ -47,15 +47,15 @@
         }
         
         .vertical-tabs-section .nav-pills {
-            background: #fff;
-            border-radius: 12px;
-            padding: 25px;
-            box-shadow: 0 10px 40px rgba(2, 2, 2, 0.08);
+            /* background: #fff; */
+            border-radius: 10px;
+            padding: 10px;
+            /* box-shadow: 0 10px 40px rgba(2, 2, 2, 0.08); */
             border: 1px solid #E8E8E8;
         }
         
         .vertical-tabs-section .nav-link {
-            padding: 18px 22px;
+            padding: 10px;
             margin-bottom: 12px;
             border-radius: 8px;
             color: #525252;
@@ -100,7 +100,7 @@
         .vertical-tabs-section .nav-link.active {
             background: linear-gradient(135deg, #3655FF 0%, #2a44d9 100%);
             color: #fff;
-            box-shadow: 0 8px 25px rgba(54, 85, 255, 0.35);
+            /* box-shadow: 0 8px 25px rgba(54, 85, 255, 0.35); */
             border-color: transparent;
         }
         
@@ -110,12 +110,12 @@
         }
         
         .vertical-tabs-section .tab-content {
-            background: #fff;
+            /* background: #fff;
             border-radius: 12px;
             padding: 45px;
             box-shadow: 0 10px 40px rgba(2, 2, 2, 0.08);
             min-height: 450px;
-            border: 1px solid #E8E8E8;
+            border: 1px solid #E8E8E8; */
         }
         
         .vertical-tabs-section .vertical-tab-content {
@@ -147,7 +147,7 @@
         }
         
         .vertical-tabs-section .service-features li {
-            padding: 15px 20px;
+            padding: 10px 20px;
             color: #525252;
             display: flex;
             align-items: center;
@@ -207,6 +207,38 @@
                 padding: 25px;
             }
         }
+    .founder-info-section .founder-info-wrapper .founder-content p {
+    font-family: var(--font-bricolageGrotesque);
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 30px;
+    color: var(--title-color);
+}
+.founder-info-section .founder-info-wrapper {
+    border: 1px solid var(--borders-color);
+    padding: 30px 40px;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 40px;
+}
+.founder-info-section .founder-info-wrapper .founder-img-wrapper {
+    position: absolute;
+    right: 15px;
+    top: 50px;
+}
+.founder-info-section .founder-info-wrapper .founder-img-wrapper .founder-img-wrap img {
+    max-width: 330px;
+    width: 100%;
+}
+.mod{
+    font-family: var(--font-bricolageGrotesque);
+    /* font-weight: 600; */
+    font-size: 13px;
+    line-height: 21px;
+    margin-bottom: 80px;
+    color: var(--title-color);
+}
     </style>
     <!-- Title -->
     <title>Services by Konndor Line | Konndor Industries Limited</title>
@@ -387,7 +419,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                         <button class="nav-link active" id="v-pills-shipping-tab" data-bs-toggle="pill" data-bs-target="#v-pills-shipping" type="button" role="tab" aria-controls="v-pills-shipping" aria-selected="true">
                             <i class="bi bi-ship"></i> Shipping Agent
@@ -418,42 +450,113 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-lg-8">
+                <div class="col-lg-9">
                     <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="v-pills-shipping" role="tabpanel" aria-labelledby="v-pills-shipping-tab">
-                            <div class="vertical-tab-content">
-                                <h3>Shipping Agent</h3>
-                                <p>We specialize in connecting businesses and individuals worldwide with efficient, reliable, and affordable cargo shipping solutions. Our team of experienced professionals ensures seamless coordination across all aspects of shipping.</p>
-                                <ul class="service-features">
-                                    <li><i class="bi bi-check-circle-fill"></i> Global network of shipping routes</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Real-time tracking and updates</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Professional documentation handling</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> 24/7 customer support</li>
-                                </ul>
+                            <div class="founder-info-section">
+                                    <div class="founder-info-wrapper">
+                                        <div class="founder-content">
+                                            <h3>Shipping Agent Services</h3>
+                                            <hr>
+                                            <p> At Konndor Line, we provide reliable and professional Shipping Agent services to <span>ensure smooth vessel operations and efficient port management across global trade routes</span>.
+                                            </p>
+                                            <p style="font-size: 16px;font-weight: 200;">As your trusted port representative, we handle every aspect of vessel coordination — from pre-arrival planning to final departure clearance. Our experienced team works closely with port authorities, customs officials, terminal operators, and service providers to ensure full compliance with local regulations while minimizing delays and operational costs. With strong industry relationships and round-the-clock support, we guarantee seamless communication, accurate documentation, and efficient vessel turnaround for every call.</p>
+
+                                        </div>
+
+                                        <div class="founder-img-wrapper">
+                                            <div class="founder-img-wrap">
+                                                <img src="assets/img/innerpages/founder-info-img.png" alt="Founder Image">
+                                             </div>
+                                        </div>
+                                        <div class="founder-content">
+                                        <p class="mt-40">Our Shipping Agent Services Include:</p>
+                                        </div>
+                                        <ul class="service-features">
+                                            <li><i class="bi bi-check-circle-fill"></i> Vessel clearance and port documentation</li>
+                                            <li><i class="bi bi-check-circle-fill"></i> Coordination with port and terminal authorities</li>
+                                            <li><i class="bi bi-check-circle-fill"></i> Customs formalities and regulatory compliance</li>
+                                            <li><i class="bi bi-check-circle-fill"></i> Crew change and husbandry services</li>
+                                            <li><i class="bi bi-check-circle-fill"></i> Bunker arrangements and supply coordination</li>
+                                            <li><i class="bi bi-check-circle-fill"></i> Cargo documentation and bill of lading handling</li>
+                                            <li><i class="bi bi-check-circle-fill"></i> Real-time vessel status updates</li>
+                                            <li><i class="bi bi-check-circle-fill"></i> 24/7 operational and emergency support</li>
+                                        </ul>
+                                </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="v-pills-nvocc" role="tabpanel" aria-labelledby="v-pills-nvocc-tab">
-                            <div class="vertical-tab-content">
-                                <h3>NVOCC (Non-Vessel Operating Common Carrier)</h3>
-                                <p>As an NVOCC, we offer comprehensive freight forwarding services without owning vessels. We consolidate shipments from multiple shippers to achieve cost-effective shipping solutions.</p>
-                                <ul class="service-features">
-                                    <li><i class="bi bi-check-circle-fill"></i> Competitive freight rates</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Flexible container options</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Cargo consolidation services</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Global coverage</li>
-                                </ul>
+                            <div class="founder-info-section">
+                                    <div class="founder-info-wrapper">
+                                        <div class="founder-content">
+                                            <h3>NVOCC Services</h3>
+                                            <hr>
+                                            <p>
+                                                At Konndor Line, we offer comprehensive and cost-effective NVOCC (Non-Vessel Operating Common Carrier) services designed to 
+                                                <span>provide flexible, reliable, and globally connected ocean freight solutions.</span>
+                                            </p>
+
+                                            <p style="font-size: 16px;font-weight: 200;">
+                                                As a trusted NVOCC partner, we manage end-to-end ocean transportation by issuing our own House Bills of Lading, securing competitive freight rates, and ensuring efficient cargo consolidation. With strong carrier partnerships and an extensive global network, we provide dependable container space allocation, seamless documentation handling, and complete shipment visibility. Our team ensures smooth coordination from origin to destination while maintaining cost efficiency, transparency, and timely delivery.
+                                            </p>
+                                        </div>
+                                        <div class="founder-img-wrapper">
+                                            <div class="founder-img-wrap">
+                                                <img src="assets/img/innerpages/founder-info-img.png" alt="Founder Image">
+                                             </div>
+                                        </div>
+                                        <div class="founder-content">
+                                            <p class="mt-40">Our NVOCC Services Include:</p>
+                                        </div>
+                                            <ul class="service-features">
+                                                <li><i class="bi bi-check-circle-fill"></i> Issuance of House Bill of Lading (HBL)</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Competitive ocean freight rate management</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Full Container Load (FCL) services</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Less than Container Load (LCL) consolidation</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Container space booking and allocation</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> End-to-end shipment coordination</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Real-time cargo tracking and updates</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Global agent network support</li>
+                                            </ul>
+
+                                </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="v-pills-freight" role="tabpanel" aria-labelledby="v-pills-freight-tab">
-                            <div class="vertical-tab-content">
-                                <h3>Freight Forwarding</h3>
-                                <p>Our comprehensive freight forwarding services cover air, sea, rail, and inland transportation. We handle all aspects of cargo movement from origin to destination.</p>
-                                <ul class="service-features">
-                                    <li><i class="bi bi-check-circle-fill"></i> Air Freight - Fast and reliable</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Sea Freight - Cost-effective bulk cargo</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Rail Freight - Efficient overland transport</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Inland Freight - Door-to-door delivery</li>
-                                </ul>
+                            <div class="founder-info-section">
+                                    <div class="founder-info-wrapper">
+                                        <div class="founder-content">
+                                            <h3>Freight Forwarding Services</h3>
+                                            <hr>
+                                            <p>
+                                                At Konndor Line, we provide integrated Freight Forwarding solutions designed to 
+                                                <span>ensure safe, timely, and cost-efficient cargo movement across air, sea, rail, and land transport networks.</span>
+                                            </p>
+
+                                            <p style="font-size: 16px;font-weight: 200;">
+                                                Our comprehensive freight forwarding services are tailored to meet diverse shipping requirements across industries. From urgent air shipments to large-scale ocean freight and reliable inland transportation, we manage every stage of the logistics process with precision and transparency. Backed by a strong global network and experienced operations team, we coordinate documentation, customs compliance, carrier booking, and real-time tracking to guarantee seamless cargo delivery from origin to destination.
+                                            </p>
+                                        </div>
+                                        <div class="founder-img-wrapper">
+                                            <div class="founder-img-wrap">
+                                                <img src="assets/img/innerpages/founder-info-img.png" alt="Founder Image">
+                                             </div>
+                                        </div>
+                                        <div class="founder-content">
+                                            <p class="mt-40">Our Freight Forwarding Services Include:</p>
+                                        </div>
+                                            <ul class="service-features">
+                                                <li><i class="bi bi-check-circle-fill"></i> <strong>Air Freight:</strong> Fast and secure solutions for time-sensitive cargo worldwide</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> <strong>Sea Freight:</strong> Cost-effective FCL and LCL ocean transportation</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> <strong>Rail Freight:</strong> Efficient and dependable long-distance inland transport</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> <strong>Land Freight:</strong> Flexible road transport for door-to-door delivery</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Multimodal transportation solutions</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Cargo consolidation and distribution</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Customs documentation and regulatory compliance</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Real-time shipment tracking and status updates</li>
+                                            </ul>
+
+                                </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="v-pills-logistics" role="tabpanel" aria-labelledby="v-pills-logistics-tab">
@@ -469,15 +572,39 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="v-pills-project" role="tabpanel" aria-labelledby="v-pills-project-tab">
-                            <div class="vertical-tab-content">
-                                <h3>Project Cargo</h3>
-                                <p>Specialized handling for oversized, heavy, and complex cargo. We have the expertise and equipment to transport project cargo of any magnitude.</p>
-                                <ul class="service-features">
-                                    <li><i class="bi bi-check-circle-fill"></i> Heavy lift cargo handling</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Out-of-gauge cargo solutions</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Multi-modal transport</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Specialized equipment</li>
-                                </ul>
+                                <div class="founder-info-section">
+                                    <div class="founder-info-wrapper">
+                                        <div class="founder-content">
+                                            <h3>Project Cargo Services</h3>
+                                            <hr>
+                                            <p>
+                                                At Konndor Line, we specialize in comprehensive Project Cargo solutions designed to 
+                                                <span>manage oversized, heavy-lift, and complex shipments with precision, safety, and efficiency.</span>
+                                            </p>
+
+                                            <p style="font-size: 16px;font-weight: 200;">
+                                                Our project cargo expertise covers the transportation of out-of-gauge (OOG), breakbulk, and heavy machinery across global routes. From detailed route planning and feasibility analysis to specialized equipment handling and on-site coordination, we ensure every phase of the project is executed seamlessly. With strong partnerships, technical know-how, and strict safety standards, our team delivers customized logistics strategies that minimize risk, reduce transit time, and ensure successful delivery of high-value and critical cargo.
+                                            </p>
+                                        </div>
+                                        <div class="founder-img-wrapper">
+                                            <div class="founder-img-wrap">
+                                                <img src="assets/img/innerpages/founder-info-img.png" alt="Founder Image">
+                                             </div>
+                                        </div>
+                                        <div class="founder-content">
+                                            <p class="mt-40">Our Project Cargo Services Include:</p>
+                                        </div>
+                                            <ul class="service-features">
+                                                <li><i class="bi bi-check-circle-fill"></i> Heavy-lift and oversized cargo handling</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Breakbulk and out-of-gauge (OOG) transportation</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Detailed route surveys and feasibility studies</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Specialized equipment and crane arrangements</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Port handling and stevedoring coordination</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Multimodal transport planning</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> Customs documentation and regulatory compliance</li>
+                                                <li><i class="bi bi-check-circle-fill"></i> End-to-end project management and on-site supervision</li>
+                                            </ul>
+                                </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="v-pills-perishable" role="tabpanel" aria-labelledby="v-pills-perishable-tab">
@@ -534,7 +661,33 @@
         </div>
     </div>
     <!-- Vertical Tabs Section End -->
-
+    <!-- Transit Section Start -->
+    <div class="transit-section mb-120">
+        <div class="container">
+            <span>We’re supply chain in the world-wide.</span>
+            <svg class="line" height="6" viewBox="0 0 1320 6" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M5 2.5L0 0.113249V5.88675L5 3.5V2.5ZM1315 3.5L1320 5.88675V0.113249L1315 2.5V3.5ZM4.5 3V3.5H1315.5V3V2.5H4.5V3Z" />
+            </svg>
+            <div class="content">
+                <h2 class="counter">26,000</h2>
+                <div class="right-content">
+                    <div class="icon">
+                        <svg width="68" height="68" viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path
+                                    d="M57.8718 34.4636L41.8607 67.4205C41.6673 67.7682 41.3193 68 40.8939 68H11.0594C10.2859 68 9.78316 67.1886 10.0925 66.4932L25.6783 34.4636C25.833 34.1545 25.833 33.8455 25.6783 33.5364L10.1699 1.50682C9.82183 0.811363 10.3246 0 11.1368 0H40.9712C41.3579 0 41.7447 0.231818 41.9381 0.579545L57.9492 33.5364C58.0265 33.8455 58.0265 34.1545 57.8718 34.4636Z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                    <p>Today, we are proud to be a leader in the industry, known for our unwavering dedication to
+                        quality and customer satisfaction.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Transit Section End -->
      <!-- Footer Section Start -->
     <footer class="footer-section style-2">
         <div class="footer-menu">
